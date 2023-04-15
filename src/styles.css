@@ -1,10 +1,46 @@
 body {
-    margin: 0;
-  }
-  html,
-  body,
-  #root {
-    height: 100%;
-    background: #0e1129;
-  }
-  
+  margin: 0;
+}
+html,
+body,
+#root {
+  height: 100%;
+  background: #A3A8D4;
+}
+
+.home-social-icons {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 2em;
+  line-height: 2em;
+  border-radius: 14px;
+  transition: border 1s;
+}
+
+.icon-colour {
+  color: lightpink!important;
+}
+
+.icon-colour-green {
+  color: lightgreen!important;
+}
+
+.icon-colour-white {
+  color: white!important;
+}
+
+.icon-colour-black {
+  color: black!important;
+}
+
+.lightgreen {
+  color: lightgreen;
+}
+
+h1 span.lightgreen {
+  color: lightgreen;
+}
+
