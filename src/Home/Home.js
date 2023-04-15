@@ -81,6 +81,16 @@ function Home() {
           <i style = {{color: "lightpink", fontStyle: "italic"}}> Python</i>: utilized computational modeling and calculus to enable in-depth analysis and optimization of real-life biological processes
           <br />
           <i style = {{color: "lightpink", fontStyle: "italic"}}>HTML/CSS, Javascript using React</i>: better understand front-end development like creating this website
+          <br />
+          <br />
+          What I've been learning:
+          <br />
+          <i style = {{color: "lightpink", fontStyles: "italic"}}>Swift </i> 
+          for ios app development
+          <br /> 
+          <i style = {{color: "lightpink", fontStyles: "italic"}}> Cloud Computing </i>
+          for cross-platform web and mobile applications.
+          <br />
         </h1>
       </Content>
     </Wrapper>
