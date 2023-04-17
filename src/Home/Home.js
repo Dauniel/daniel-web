@@ -83,7 +83,8 @@ function Home() {
           <i style = {{color: "lightpink", fontStyle: "italic"}}>HTML/CSS, Javascript using React</i>: better understand front-end development like creating this website
           <br />
           <br />
-          What I've been learning:
+          What I'm <i style = {{color: "lightpink", fontStyles: "italic"}}>interested </i>  in  
+          <i style = {{color: "lightpink", fontStyles: "italic"}}> right now</i>:
           <br />
           <i style = {{color: "lightpink", fontStyles: "italic"}}>Swift </i> 
           for ios app development
