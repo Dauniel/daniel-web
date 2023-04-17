@@ -74,7 +74,7 @@ function Home() {
           <i style={{ color: "lightpink", fontStyle: "italic" }}> Swift</i>
           <br />
           <br />
-          What I've been using a lot recently:
+          What I've been <i style = {{color: "lightpink", fontStyle: "italic"}}> using</i> a lot <i style = {{color: "lightpink", fontStyle: "italic"}}> recently</i>:
           <br />
           <i style = {{color: "lightpink", fontStyle: "italic"}}> C++</i>: data structures/algorithms to develop high-capacity databases and object-oriented progamming for video game development
           <br />
