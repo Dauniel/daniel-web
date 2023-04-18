@@ -100,11 +100,6 @@ function Projects() {
               </li>
             </ul>
           </li>
-          <li>
-            <span style = {{borderBottom: "1px solid black"}}
-              
-            ></span>
-          </li>
         </h1>
 
       </Content>
