@@ -5,32 +5,32 @@ import { generateLineBreaks } from "../components/myFunctions";
 
 
 import Logo from "../images/logo.svg";
+import About_Logo from "../images/about-logo.svg";
 import Resume_Logo from "../images/resume-logo.svg"
-import Projects_Logo from "../images/projects-logo.svg";
 
-
+import IconLaptop from "../images/icon-laptop.svg";
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn } from "react-icons/fa";
 
 import Type from "../components/Type"
 
-function About() {
+function Projects() {
     return (
     <Wrapper>
         {Array.from({ length: 50 }).map((_, index) => (
             <br key={index} />
         ))}        
-        <Spline
+        {/* <Spline
           className="spline"
           scene="https://draft.spline.design/Y8lc2n3JY59606uA/scene.splinecode"
-        />
+        /> */}
       <Social>
         <div />
           <a
             href="https://github.com/Dauniel"
             target="_blank"
             rel="noreferrer"
-            className="icon-colour-green  home-social-icons"
+            className="icon-colour-black  home-social-icons"
           >
             <AiFillGithub />
           </a>
@@ -38,7 +38,7 @@ function About() {
             href="https://www.linkedin.com/in/daniel-chang-457886248/"
             target="_blank"
             rel="noreferrer"
-            className="icon-colour-green  home-social-icons"
+            className="icon-colour-black  home-social-icons"
           >
             <FaLinkedinIn />
           </a>
@@ -51,53 +51,67 @@ function About() {
             </a>
           </li>
           <li>
+            <a href="/">
+                <img src = {About_Logo} alt = "about"/>
+            </a>
+          </li>
+          <li>
             <a href="/resume">
                 <img src = {Resume_Logo} alt = "resume"/>
             </a>
           </li>
-          <li>
-            <a href="/projects">
-                <img src = {Projects_Logo} alt = "projects"/>
-            </a>
-          </li>
         </Menu>
-        <h1 style={{ fontSize: "2em" }}><Type strings = {["Get to know me a little better!"]} /></h1>
-        <h1 style={{ fontSize: "1.5em" }}>
-            Hi, again, I am 
-            <span className = "lightgreen"> Daniel Chang</span>! I was born in 
-            <span className = "lightgreen"> Los Angeles, California </span>
-            but grew up in 
-            <span className = "lightgreen"> Santa Clarita, California</span>
-            .
-            <br />
-            <br />
-            I am a first year student at University of California, Los Angeles studying
-            <span className = "lightgreen"> Computational and Systems Biology</span>
-            .
-            <br />
-            <br />
-            If I am not 
-            <span className = "lightgreen"> coding</span>
-            , I am probably...
-            <br />
-            <li style = {{fontSize: "0.85em"}}>
-                Playing League of Legends, Brawl Stars, Minecraft, and Overcooked with my friends
-            </li>
-            <li style = {{fontSize: "0.85em"}}>
-                Playing with my three dogs: Moon, Bome, and Koa
-            </li>
-            <li style = {{fontSize: "0.85em"}}>
-                Eating out with my family and friends
-            </li>
-            <li style = {{fontSize: "0.85em"}}>
-                Snowboarding, skiiing, skateboarding, and electric longboarding
-            </li>
+        <h1 style={{ fontSize: "2em", color: "black"}}><Type strings = {["Projects"]} /></h1>
+        <h1 style={{ fontSize: "1.25em", color: "black" }}>
+          <li>
+          <span style={{ borderBottom: "1px solid black" }}>
+            Biological Simulation of Infectious Disease Transmission(SIR MODEL)
+          </span>
+            <ul>
+              <li style = {{fontSize : "0.75em"}}> 
+              Python project using CoCalc software to simulate infectious disease spread using the SIR model. 
+              Implemented the SIR model using scipy.integrate.odeint and calculated equilibrium points and the Jacobian matrix for stability analysis. 
+              Project showcases proficiency in Python, differential equations, numerical methods, and data analysis for real-world problems in epidemiology.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span style={{ borderBottom: "1px solid black" }}>
+            DNA Transcription and Translation Program using Codon Mapping
+            </span>
+            <ul>
+              <li style = {{fontSize : "0.75em"}}> 
+              C++ program that transcribes a DNA strand into mRNA and maps each codon to its respective amino acid using a predefined map. 
+              The program also verifies the validity of the input strand and allows the user to select the direction of transcription. 
+              The program outputs the resulting mRNA sequence and corresponding amino acid sequence.
+              </li>
+            </ul>
+          </li>
+          <li>
+          <span style={{ borderBottom: "1px solid black" }}>
+            High-Capacity User/Movie Database
+          </span>
+          <ul>
+              <li style = {{fontSize : "0.75em"}}> 
+              C++ program that efficiently manages and retrieves data with hundreds of thousands of movies and users using advanced data structures and algorithms. 
+              It uses a self-balancing binary search tree to maintain a sorted collection of movies and users with their respective data (email, actors, genres, rating, year, etc. ) 
+              and employs a hash table to map information from users to movies and vice versa. Implements lambda functions, enabling streamlined and efficient data manipulation and 
+              filtering to create a point recommendation system.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span style = {{borderBottom: "1px solid black"}}
+              
+            ></span>
+          </li>
         </h1>
+
       </Content>
     </Wrapper>
     );}
 
-export default About;
+export default Projects;
 
 const Wrapper = styled.div`
   font-family: "Spline Sans", sans-serif;
@@ -107,7 +121,7 @@ const Wrapper = styled.div`
   position: relative;
   height: 100%;
   overflow-x: hidden;
-  background-color: #A6D5E9;
+  background-color: #dde3f4;
 
   .spline {
     position: absolute;
@@ -157,7 +171,7 @@ const Content = styled.div`
     font-family: "Spline Sans Mono", monospace;
     font-size: 70px;
     margin: 0;
-    max-width: 700px;
+    max-width: 1050px;
     pointer-events: auto;
     text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 
@@ -286,10 +300,11 @@ const Social = styled.div`
     height: 500px;
     background: linear-gradient(
       180deg,
-      #00ff7f 0%,
-      #48d1cc 33.57%,
-      #008000 65.86%,
-      #556b2f 100%
+      #2b2b2b 0%,
+      #404040 20%,
+      #1a1a1a 50%,
+      #000000 80%,
+      #000000 100%
     );
   }  
 `;

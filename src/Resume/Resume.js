@@ -4,7 +4,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import pdf_resume from "../components/resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
-import Button from "react-bootstrap/Button";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css"
 import Particle from "../components/particle";
@@ -14,6 +13,8 @@ import Particle from "../components/particle";
 import Logo from "../images/logo.svg";
 import About_Logo from "../images/about-logo.svg";
 import download_Logo from "../images/download-logo.svg"
+import Projects_Logo from "../images/projects-logo.svg";
+
 
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn } from "react-icons/fa";
@@ -63,6 +64,11 @@ function Resume() {
           <li>
             <a href="/about">
                 <img src = {About_Logo} alt = "about"/>
+            </a>
+          </li>
+          <li>
+            <a href="/projects">
+                <img src = {Projects_Logo} alt = "projects"/>
             </a>
           </li>
         <li>

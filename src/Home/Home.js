@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 import Logo from "../images/logo.svg";
 import About_Logo from "../images/about-logo.svg";
-import Resume_Logo from "../images/resume-logo.svg"
+import Resume_Logo from "../images/resume-logo.svg";
+import Projects_Logo from "../images/projects-logo.svg";
 
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn } from "react-icons/fa";
@@ -50,6 +51,11 @@ function Home() {
           <li>
             <a href="/resume">
                 <img src = {Resume_Logo} alt = "resume"/>
+            </a>
+          </li>
+          <li>
+            <a href="/projects">
+                <img src = {Projects_Logo} alt = "projects"/>
             </a>
           </li>
         </Menu>
