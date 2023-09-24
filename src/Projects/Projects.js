@@ -102,7 +102,7 @@ function Projects() {
           </li>
           <li>
           <span style={{ borderBottom: "1px solid black" }}>
-          Pocket Studio (Creative Labs at UCLA) Genji Genji
+          Pocket Studio (Creative Labs at UCLA)
           </span>
           <ul>
               <li style = {{fontSize : "0.75em"}}> 
