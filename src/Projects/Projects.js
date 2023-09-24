@@ -100,6 +100,18 @@ function Projects() {
               </li>
             </ul>
           </li>
+          <li>
+          <span style={{ borderBottom: "1px solid black" }}>
+          Pocket Studio (Creative Labs at UCLA)
+          </span>
+          <ul>
+              <li style = {{fontSize : "0.75em"}}> 
+              IOS app made in Swift showcasing an infinite zoom mechanism, guiding users through layered illustrations while conveying a narrative. 
+              Collaborated closely with a multidisciplinary team, including illustrators, copywriters, and UI/UX designers to deliver a seamless and 
+              engaging user experience
+              </li>
+            </ul>
+          </li>
         </h1>
 
       </Content>
