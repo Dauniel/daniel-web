@@ -71,7 +71,7 @@ function About() {
             .
             <br />
             <br />
-            I am a first year student at University of California, Los Angeles studying
+            I am a second year student at University of California, Los Angeles studying
             <span className = "lightgreen"> Computational and Systems Biology</span>
             .
             <br />
